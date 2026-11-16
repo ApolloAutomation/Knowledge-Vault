@@ -156,3 +156,55 @@ Every fact added from outside the original notes came from **wiki.apolloautomati
 - (radar-mcu-chips) Checked that the ESP32-C3 Bluetooth tracking claim for the MTR-1 and AIR-1 is backed by the original MTR-1.md and AIR-1.md ('Bluetooth tracker via ESP32-C3-Mini (YAML config required)'). It is.
 - (radar-mcu-chips) Compared all 8 files with their HEAD originals. No facts were dropped. PN7160 datasheet figures are correctly separated from Apollo specs. Wikilinks match file case (ld2450 is now LD2450). The 'PIR sensor' and 'PIR motion sensor' aliases on MH-SR602 are safe, because ESK-1 is the only other note that mentions PIR.
 - (radar-mcu-chips) vault_lint.py reports no problems in any of the 8 files. The 42 problems it still reports are all in other notes, such as Products/ESPHome-C6-Board.md.
+
+## Update 2026-11-16: owner answers applied
+
+The owner answered the open questions above, and the answers were applied to the notes. The main changes:
+
+- **Power source and sleep mode:**
+  - Power source is confirmed for NFC-1, the CAST range and the Voice Speaker.
+  - PLT-1 runs on USB-C on both versions. USB-C does not charge the battery.
+  - PUMP-1 has no battery.
+  - These have no sleep mode: CAST-1, CAST-PRO-1, Voice Speaker, PUMP-1, MSR-2 and MTR-1.
+- **PA-1:** never released, and development has stopped. Status is now `discontinued`.
+- **LED-1:** the box contains only the LED-1. It has 1 WAGO power input and 2 WAGO LED outputs.
+- **Microcontrollers:**
+  - R-PRO-1 uses the ESP32-S3.
+  - PLT-1 and TEMP-1 use the ESP32-C3.
+  - BTN-1 uses the ESP32-C6.
+- **Operating temperature** is now the rating of each product's ESP32 module, from Espressif's own datasheets. Where the exact module variant is unknown, the most conservative range is used.
+- **Waterproof:** every product is now "No".
+- **R-PRO-1:** standard 802.3af PoE, with normal draw.
+- **Breakout Module:** Apollo is donating it to ESPHome, and it is becoming an official ESPHome product.
+- **Voice Speaker:** ships without a grille. Grilles will be sold separately, or customers can 3D print their own.
+- **AIR-1:**
+  - The temperature offset is final and user adjustable.
+  - The note no longer mentions that the gas sensor is hard to source.
+- **MTR-1:** the fix for smart-charging plugs is a basic wall plug.
+- **CAST-PRO-1:** some turntables may need a phono preamp.
+- **Temperature probes:**
+  - The Short and Long probes now also list ESK-1 and the Breakout Module as compatible.
+  - The AHT20 accuracy now covers PLT-1 and TEMP-1.
+- **HUB75 panel:** 4096 pixels.
+- **PUMP-1:**
+  - Includes two 24 in pieces of tubing.
+  - The 33 ft figure is not a horizontal-run rating.
+  - Works with ESPHome and Home Assistant.
+- **LD2412:** in stock.
+- **Datasheets:** every sensor datasheet was checked against the manufacturer's own PDF.
+  - The PN7160 (Rev 4.2, July 2026) and SEN65 (D1 v1.0, Oct 2026) citations are correct.
+  - SEN55 now cites Sensirion's own copy instead of a third-party copy.
+  - Corrected figures include SEN65 humidity accuracy and the PN7160 FeliCa firmware limit.
+
+### Still open
+
+1. **Exact ESP32 module part numbers.**
+   - R-PRO-1, CAST-PRO-1 and M-1 show −40 to 65 °C, the most conservative ESP32-S3 rating. They may really be 85 or 105 °C.
+   - NFC-1 has 8 MB of flash, which may mean an H8 module rated to 105 °C.
+2. **Probe connector:** which connector the Short and Long probes use on the Breakout Module or ESK-1.
+3. **TEMP-1 food probe (NTC):** is it water resistant?
+4. **Sleep mode:** does R-PRO-1, NFC-1, M-1, LED-1, DEV-1 or DEV-2 have a sleep mode?
+5. **Operating temperature** for the Voice Speaker Add-on and the Breakout Module. Neither has its own ESP32.
+6. **LD2412 box contents:** is there an Apollo sticker?
+7. **MH-SR602:** no manufacturer datasheet was found.
+8. **Power draw:** still Unknown for every product except the R-PRO-1.

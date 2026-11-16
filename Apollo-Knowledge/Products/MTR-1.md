@@ -7,7 +7,7 @@ source: https://apolloautomation.com/products/mtr-1
 status: available
 status_checked: 2026-11-15
 power_source: [usb-c]
-last_verified: 2026-11-15
+last_verified: 2026-11-16
 ---
 # MTR-1
 
@@ -24,16 +24,16 @@ The MTR-1 is a multi-target radar multisensor for ESPHome that packs a diverse a
 - RGB pixel (RGB neopixel)
 - Piezo buzzer with different beep patterns for different alerts
 - Compact size, USB-C powered, Wi-Fi to ESPHome
-- Back male USB-C adapter; some wall plugs and receptacles with smart charging do not work with it
+- Back male USB-C adapter; some wall plugs and receptacles with smart charging do not work with it, so use a basic (non-smart-charging) wall plug
 - Open software and CAD files; Discord community
 
 ## Specs
 
 - Battery life: N/A — USB-C powered, no battery
-- Operating temperature: Unknown — escalate to support
-- Waterproof: Unknown — escalate to support
+- Operating temperature: -40 to 85 °C (rating of the ESP32-C3-MINI-1 module)
+- Waterproof: No — the MTR-1 is not waterproof
 - Power consumption awake: Unknown — escalate to support
-- Power consumption sleeping: Unknown — escalate to support
+- Power consumption sleeping: N/A — no sleep mode
 - What battery works with it: N/A — USB-C powered, no battery
 
 ## Components
@@ -57,7 +57,7 @@ The MTR-1 is a multi-target radar multisensor for ESPHome that packs a diverse a
 
 ### My MTR-1 is not working when plugged into my wall plug with the back USB-C adapter. Why?
 
-Some wall plugs and receptacles with smart charging do not work with the MTR-1's back male USB-C adapter. If yours is one of them, contact Apollo support for help choosing another way to power it.
+Some wall plugs and receptacles with smart charging do not work with the MTR-1's back male USB-C adapter. If yours is one of them, use a basic wall plug without smart charging instead.
 
 ### Can the MTR-1 tell where people are in a room?
 

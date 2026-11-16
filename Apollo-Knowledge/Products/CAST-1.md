@@ -7,7 +7,7 @@ source: https://apolloautomation.com/products/cast-1-audio-casting-device
 status: preorder
 status_checked: 2026-11-15
 power_source: [usb-c]
-last_verified: 2026-11-15
+last_verified: 2026-11-16
 ---
 # CAST-1
 
@@ -31,10 +31,10 @@ The Apollo CAST-1 makes non-smart speakers smart. It plugs into powered speakers
 - Connectivity: 2.4 GHz Wi-Fi; Ethernet with the optional W5500 Ethernet HAT (data only, no PoE)
 - Audio output: 3.5mm analog stereo line out
 - Battery life: N/A — USB-C powered, no battery
-- Operating temperature: Unknown — escalate to support
-- Waterproof: Unknown — escalate to support
+- Operating temperature: -40 to 65 °C (rating of the ESP32-S3 module with 8 MB PSRAM)
+- Waterproof: No. The CAST-1 is not waterproof; keep it indoors and dry
 - Power consumption awake: Unknown — escalate to support
-- Power consumption sleeping: N/A — USB-C powered, no sleep mode
+- Power consumption sleeping: N/A — no sleep mode
 - What battery works with it: N/A — USB-C powered, no battery
 
 ## Components

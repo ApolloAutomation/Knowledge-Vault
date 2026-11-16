@@ -7,7 +7,7 @@ source: https://apolloautomation.com/products/cast-pro-1
 status: preorder
 status_checked: 2026-11-15
 power_source: [usb-c]
-last_verified: 2026-11-15
+last_verified: 2026-11-16
 ---
 # CAST-PRO-1
 
@@ -17,7 +17,7 @@ The Apollo CAST PRO-1 adds a 3.5mm Line In jack to the casting idea of [[CAST-1]
 
 ## Features
 
-- Audio in: 3.5mm Line In for line-level sources
+- Audio in: 3.5mm Line In for line-level sources (some turntables may require a phono preamp)
 - Audio out: 3.5mm dual analog and optical jack, selected in Home Assistant; analog uses a PCM5122 DAC
 - Built-in 10/100 Ethernet (data only, no PoE) and 2.4 GHz Wi-Fi
 - Open source ESPHome firmware with OTA updates; Sendspin support; syncs with other CAST PRO-1 and CAST-1 units
@@ -30,13 +30,13 @@ The Apollo CAST PRO-1 adds a 3.5mm Line In jack to the casting idea of [[CAST-1]
 
 - Ethernet: Built-in 10/100 (data only, no PoE)
 - Wi-Fi: 2.4 GHz
-- Audio input: 3.5mm Line In (line level)
+- Audio input: 3.5mm Line In (line level; some turntables may require a phono preamp)
 - Audio output: 3.5mm dual analog and optical jack
 - Battery life: N/A — USB-C powered, no battery
-- Operating temperature: Unknown — escalate to support
-- Waterproof: Unknown — escalate to support
+- Operating temperature: -40 to 65 °C (rating of the ESP32-S3 module, most conservative ESP32-S3 range)
+- Waterproof: No. The CAST PRO-1 is not waterproof; keep it indoors and dry
 - Power consumption awake: Unknown — escalate to support
-- Power consumption sleeping: N/A — USB-C powered, no sleep mode
+- Power consumption sleeping: N/A — no sleep mode
 - What battery works with it: N/A — USB-C powered, no battery
 
 ## Components
@@ -62,6 +62,10 @@ The Apollo CAST PRO-1 adds a 3.5mm Line In jack to the casting idea of [[CAST-1]
 ### Can I connect my record player, CD player or TV to the CAST PRO-1?
 
 Yes. The CAST PRO-1 has a 3.5mm Line In jack for line-level sources, so a record player, CD player or TV becomes a source in Music Assistant that you can play in other rooms.
+
+### Do I need a phono preamp to connect my turntable to the CAST PRO-1?
+
+Some turntables may require a phono preamp to use the 3.5mm Line In, which is built for line-level sources.
 
 ### How do I switch the CAST PRO-1 between analog and optical output?
 

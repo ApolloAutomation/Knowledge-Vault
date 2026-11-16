@@ -6,13 +6,13 @@ audience: customer
 source: https://apolloautomation.com/products/pump-1-tubing-only
 status: available
 status_checked: 2026-11-15
-last_verified: 2026-11-15
+last_verified: 2026-11-16
 ---
 # PUMP-1-Tubing
 
 ## Description
 
-Two 24 in pieces of flexible silicone tubing (48 in total) for the [[PUMP-1]], one for inflow and one for outflow. Also sold inside the PUMP-1-Full-Accessory-Kit.
+Two 24 in pieces of flexible silicone tubing (48 in total) for the [[PUMP-1]], one for inflow and one for outflow. The PUMP-1 already comes with two 24 in pieces; this listing is extra or replacement tubing. Also sold inside the PUMP-1-Full-Accessory-Kit.
 
 ## Features
 
@@ -47,4 +47,4 @@ Two 24 in pieces, 48 in in total: one for inflow and one for outflow.
 
 ### Is tubing included with the PUMP-1?
 
-No. The [[PUMP-1]] box contains the pump and an Apollo sticker. Tubing is sold separately or as part of the PUMP-1-Full-Accessory-Kit.
+Yes. The [[PUMP-1]] comes with two 24 in pieces of silicone tubing. This listing is for extra or replacement tubing, and tubing is also part of the PUMP-1-Full-Accessory-Kit.

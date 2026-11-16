@@ -7,7 +7,7 @@ source: https://apolloautomation.com/products/air-1
 status: available
 status_checked: 2026-11-15
 power_source: [usb-c]
-last_verified: 2026-11-15
+last_verified: 2026-11-16
 ---
 # AIR-1
 
@@ -23,15 +23,15 @@ The AIR-1 is a compact, feature-rich, affordable and expandable air sensor for H
 - Bluetooth tracker via the ESP32-C3-Mini (YAML config required)
 - RGB pixels for color-coded alerts
 - Power and sensor expansion connector for future sensors and power methods
-- A temperature offset is needed because of heat from the ESP32-C3; using the sleep function lowers the needed offset
+- A temperature offset is needed because of heat from the ESP32-C3; the offset is user adjustable, and using the sleep function lowers the needed offset
 - Open software and CAD files
 
 ## Specs
 
-- Temperature offset: Needed due to heat buildup from the ESP32-C3; between 2 and 6 °C, still being evaluated by Apollo; much lower when using the Sleep function
+- Temperature offset: Needed due to heat buildup from the ESP32-C3; between 2 and 6 °C, user adjustable; much lower when using the Sleep function
 - Battery life: N/A — USB-C powered, no battery
-- Operating temperature: Unknown — escalate to support
-- Waterproof: Unknown — escalate to support
+- Operating temperature: -40 to 85 °C (rating of the ESP32-C3-MINI-1 module)
+- Waterproof: No — the AIR-1 is not waterproof
 - Power consumption awake: Unknown — escalate to support
 - Power consumption sleeping: Unknown — escalate to support
 - What battery works with it: N/A — USB-C powered, no battery
@@ -57,7 +57,7 @@ The AIR-1 is a compact, feature-rich, affordable and expandable air sensor for H
 
 ### Why does my AIR-1 read a higher temperature than my other thermometers?
 
-Heat from the ESP32-C3 microcontroller builds up inside the AIR-1, so a temperature offset is needed. The offset is between 2 and 6 °C and is still being evaluated by Apollo. Using the Sleep function makes the needed offset much lower.
+Heat from the ESP32-C3 microcontroller builds up inside the AIR-1, so a temperature offset is needed. The offset is between 2 and 6 °C, and you can adjust it yourself. Using the Sleep function makes the needed offset much lower.
 
 ### Why do the gas readings (methane, CO, etc.) jump around or not match exact ppm values?
 
@@ -86,3 +86,7 @@ No. The AIR-1 is controlled locally over Wi-Fi with ESPHome, with no subscriptio
 ### Does the AIR-1 run on batteries?
 
 No. It is powered via USB-C and a wall adapter.
+
+### Is the AIR-1 waterproof?
+
+No. The AIR-1 is not waterproof.

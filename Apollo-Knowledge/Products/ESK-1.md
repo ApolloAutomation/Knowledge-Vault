@@ -7,7 +7,7 @@ source: https://apolloautomation.com/products/esk-1-esphome-starter-kit
 status: available
 status_checked: 2026-11-15
 power_source: [usb-c, battery]
-last_verified: 2026-11-15
+last_verified: 2026-11-16
 ---
 # ESK-1
 
@@ -29,11 +29,11 @@ The Official ESPHome Starter Kit is a way to build your own smart home devices w
 - Power input: USB-C, with support for an optional rechargeable LiPo battery
 - Connectivity: Wi-Fi, Bluetooth LE and Thread (officially supported); Zigbee exists at chip level but is not supported out of the box
 - Battery life: Unknown — escalate to support
-- Operating temperature: Unknown — escalate to support
-- Waterproof: Unknown — escalate to support
+- Operating temperature: -40 to 85 °C (rating of the ESP32-C6-MINI-1 module on the ESPHome C6 Board)
+- Waterproof: No. The kit and its modules are not waterproof
 - Power consumption awake: Unknown — escalate to support
 - Power consumption sleeping: Unknown — escalate to support
-- What battery works with it: Optional rechargeable 3.7V LiPo with a 2-pin JST-PH 2.0 connector (not included). Apollo's battery guide uses a 3.7V 2800mAh LiPo.
+- What battery works with it: Optional rechargeable 3.7V LiPo with a 2-pin JST-PH 2.0 connector (not included). Apollo does not sell or recommend a specific battery; the 3.7V 2800mAh LiPo used in Apollo's battery guide is one example that works.
 
 ## Components
 
@@ -87,7 +87,7 @@ Yes. Any two modules can run at the same time to make a multisensor, one on each
 
 ### Can the kit run on battery power?
 
-Yes. The board supports an optional rechargeable 3.7V LiPo battery with a 2-pin JST-PH 2.0 connector, which charges over the same USB-C cable. The battery is not included. See the [[ESPHome-C6-Board]] note and https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/modules/battery/ for wiring polarity.
+Yes. The board supports an optional rechargeable 3.7V LiPo battery with a 2-pin JST-PH 2.0 connector, which charges over the same USB-C cable. The battery is not included, and Apollo does not sell or recommend a specific battery; the 3.7V 2800mAh LiPo used in Apollo's battery guide is one example that works. See the [[ESPHome-C6-Board]] note and https://wiki.apolloautomation.com/products/ESPHome-Starter-Kit/modules/battery/ for wiring polarity.
 
 ### Does the kit support Zigbee?
 
@@ -99,7 +99,7 @@ Check the Accessory Power Rail first. The onboard RGB LED and every module get t
 
 ### Can I add air quality or temperature probes to the kit?
 
-Yes, with the [[Apollo-Breakout-Module]]. The [[SEN65]] air quality module, the [[Short-Temperature-Probe]] and [[Long-Temperature-Probe]], and Dupont cables all require the Breakout Module.
+Yes, with the [[Apollo-Breakout-Module]]. The [[Short-Temperature-Probe]] and [[Long-Temperature-Probe]] are compatible with the kit. The [[SEN65]] air quality module, both temperature probes, and Dupont cables all require the Breakout Module.
 
 ### Does the kit need a cloud account or subscription?
 

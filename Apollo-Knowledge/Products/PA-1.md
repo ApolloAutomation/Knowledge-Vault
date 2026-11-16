@@ -4,18 +4,20 @@ aliases: [PA 1, PA1, Garage Parking Assistant, PA-1 Garage Parking Assistant]
 type: product
 audience: customer
 source: https://apolloautomation.com/products/pa-1-garage-parking-assistant
-status: sold-out
-status_checked: 2026-11-15
+status: discontinued
+status_checked: 2026-11-16
 power_source: [battery]
-last_verified: 2026-11-15
+last_verified: 2026-11-16
 ---
 # PA-1
 
 ## Description
 
-The PA-1 is a smart parking sensor for a garage, helping you park in the right spot every time and avoid hitting things at the front of the garage. It is a smaller, cleaner design than most alternatives.
+The PA-1 Garage Parking Assistant was never released, and Apollo is not developing it further. It was designed as a smart parking sensor for a garage, to help you park in the right spot every time and avoid hitting things at the front of the garage, in a smaller, cleaner design than most alternatives.
 
 ## Features
+
+The PA-1 was never released. Its planned features were:
 
 - Works with or without a smart home controller
 - Park distance is set by pressing a button
@@ -25,39 +27,31 @@ The PA-1 is a smart parking sensor for a garage, helping you park in the right s
 
 ## Specs
 
-- Battery life: Testing shows the battery should last 6-7 months with normal use
-- Operating temperature: Unknown — escalate to support
-- Waterproof: Unknown — escalate to support
-- Power consumption awake: Unknown — escalate to support
-- Power consumption sleeping: Unknown — escalate to support
-- What battery works with it: Unknown — escalate to support
+- Battery life: N/A — product was never released
+- Operating temperature: N/A — product was never released
+- Waterproof: No
+- Power consumption awake: N/A — product was never released
+- Power consumption sleeping: N/A — product was never released
+- What battery works with it: N/A — product was never released
 
 ## Components
 
-_No separate components listed._
+N/A — product was never released
 
 ## Options and add-ons
 
-None listed (single default variant).
+N/A — product was never released
 
 ## What's in the box
 
-Unknown — escalate to support
+N/A — product was never released
 
 ## Common questions and answers
 
-### Do I need Home Assistant or a smart home hub to use the PA-1?
+### Can I buy the PA-1?
 
-No. The PA-1 works with or without a smart home controller.
+No. The PA-1 was never released, and development has stopped, so it is not available to buy.
 
-### How do I set where the car should stop?
+### Will the PA-1 be released later?
 
-Set the park distance by pressing the button on the PA-1.
-
-### How long does the PA-1 battery last?
-
-Testing shows the battery should last 6-7 months with normal use. The PA-1 is battery powered.
-
-### I have trouble telling colors apart. Can the PA-1 still help me park?
-
-Yes. The LEDs are controllable, so they can be set up for people with color difficulties, for example to show an X to tell you to stop.
+No. Apollo is not developing the PA-1 further.

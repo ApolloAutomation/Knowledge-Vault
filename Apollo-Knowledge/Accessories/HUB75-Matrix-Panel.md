@@ -6,7 +6,7 @@ audience: customer
 source: https://apolloautomation.com/products/hub75-matrix-panel-only
 status: available
 status_checked: 2026-11-15
-last_verified: 2026-11-15
+last_verified: 2026-11-16
 ---
 # HUB75-Matrix-Panel
 
@@ -22,8 +22,9 @@ The HUB75 matrix panel on its own, without the [[M-1]] controller. A controller 
 
 ## Specs
 
-- Pixel count: Unknown — escalate to support. The [[M-1]], which uses this panel, lists 4096 pixels
+- Pixel count: 4096 (the same panel used on the [[M-1]])
 - LED pitch: P2.5 (2.5 mm, spacing between LEDs)
+- Waterproof: No
 
 ## Compatible with
 

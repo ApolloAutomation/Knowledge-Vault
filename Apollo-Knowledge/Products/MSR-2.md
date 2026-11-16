@@ -7,7 +7,7 @@ source: https://apolloautomation.com/products/msr-2
 status: available
 status_checked: 2026-11-15
 power_source: [usb-c]
-last_verified: 2026-11-15
+last_verified: 2026-11-16
 ---
 # MSR-2
 
@@ -31,10 +31,10 @@ The MSR-2 is an mmWave multisensor for Home Assistant and an updated version of 
 ## Specs
 
 - Battery life: N/A — USB-C powered, no battery
-- Operating temperature: Unknown — escalate to support
-- Waterproof: Unknown — escalate to support
+- Operating temperature: -40 to 85 °C (rating of the ESP32-C3-MINI-1 module)
+- Waterproof: No — the MSR-2 is not waterproof
 - Power consumption awake: Unknown — escalate to support
-- Power consumption sleeping: Unknown — escalate to support
+- Power consumption sleeping: N/A — no sleep mode
 - What battery works with it: N/A — USB-C powered, no battery
 
 ## Components

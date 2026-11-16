@@ -7,13 +7,13 @@ source: https://apolloautomation.com/products/pump-1-fluid-pump
 status: available
 status_checked: 2026-11-15
 power_source: [usb-c]
-last_verified: 2026-11-15
+last_verified: 2026-11-16
 ---
 # PUMP-1
 
 ## Description
 
-The Apollo PUMP-1 is a compact, food-safe fluid pump built to work with the [[PLT-1]] plant sensor to automate watering. It has two ports for fluid sensors that detect water presence, so the pump stops when watering is done or the bottle runs empty. Besides plants it suits filling fish tanks, robot vacuum mop tanks, pet bowls, coffee pots and more.
+The Apollo PUMP-1 is a compact, food-safe fluid pump built to work with the [[PLT-1]] plant sensor to automate watering. It has two ports for fluid sensors that detect water presence, so the pump stops when watering is done or the bottle runs empty. The PUMP-1 officially works with ESPHome and Home Assistant. Besides plants it suits filling fish tanks, robot vacuum mop tanks, pet bowls, coffee pots and more.
 
 ## Features
 
@@ -21,6 +21,8 @@ The Apollo PUMP-1 is a compact, food-safe fluid pump built to work with the [[PL
 - Mini DC fluid pump, powered over USB-C
 - Two capacitive fluid level sensor ports (PUMP-1-Fluid-Sensor); the pump stops automatically when the bottle runs empty
 - Pairs with the [[PLT-1]] for automated plant watering
+- Officially works with ESPHome and Home Assistant
+- Includes two 24 in pieces of silicone tubing
 - Use cases: automated plant watering, fish tank filling and maintenance, robot vacuum mop tank refills, pet water bowl refills, coffee maker water supply, drain pump function
 - Wiki: https://wiki.apolloautomation.com/products/pump1/introduction/
 - The fluid sensor cable can be extended with cables sold by Apollo
@@ -29,12 +31,12 @@ The Apollo PUMP-1 is a compact, food-safe fluid pump built to work with the [[PL
 
 - Flow rate: Up to 900 ml/min
 - Pump height: Tested to 14 ft+ tall
-- Pump length: Tested to 33 ft long (whether this is a horizontal run is not specified)
+- Pump length: Tested to 33 ft (not a horizontal-run rating)
 - Battery life: N/A — USB-C powered, no battery
-- Operating temperature: Unknown — escalate to support
-- Waterproof: Unknown — escalate to support
+- Operating temperature: -40 to 85 °C (rating of the ESP32-C6-MINI-1 module)
+- Waterproof: No. The pump moves liquid through its tubing, but the PUMP-1 unit itself is not waterproof
 - Power consumption awake: Unknown — escalate to support
-- Power consumption sleeping: Unknown — escalate to support
+- Power consumption sleeping: N/A — no sleep mode
 - What battery works with it: N/A — USB-C powered, no battery
 
 ## Components
@@ -48,7 +50,7 @@ PUMP-1 only, or with add-ons: USB-C Cable, PUMP-1-Fluid-Sensor, [[PUMP-1-Tubing]
 
 ## What's in the box
 
-PUMP-1; Apollo sticker.
+PUMP-1; two 24 in pieces of silicone tubing; Apollo sticker.
 
 ## Common questions and answers
 
@@ -58,15 +60,23 @@ The PUMP-1 has two ports for capacitive fluid sensors (PUMP-1-Fluid-Sensor, sold
 
 ### Does the PUMP-1 come with tubing or fluid sensors?
 
-No. The box contains the PUMP-1 and an Apollo sticker. Tubing ([[PUMP-1-Tubing]]), fluid sensors, a bottle and stand, a USB-C cable and a charger are add-ons, or you can get the PUMP-1-Full-Accessory-Kit.
+Tubing is included: the box contains the PUMP-1, two 24 in pieces of silicone tubing and an Apollo sticker. Fluid sensors, a bottle and stand, a USB-C cable and a charger are add-ons, or you can get the PUMP-1-Full-Accessory-Kit. Extra tubing is available as [[PUMP-1-Tubing]].
 
 ### How high and how far can the PUMP-1 pump water?
 
-It has been tested pumping 14 ft+ tall and 33 ft long, with a flow rate of up to 900 ml/min.
+It has been tested pumping 14 ft+ tall and to 33 ft of length (not a horizontal-run rating), with a flow rate of up to 900 ml/min.
 
 ### How is the PUMP-1 powered?
 
 Over USB-C. It has no battery.
+
+### Is the PUMP-1 waterproof?
+
+No. The PUMP-1 moves liquid through its tubing, but the unit itself is not waterproof, so keep it out of water.
+
+### Does the PUMP-1 work with ESPHome and Home Assistant?
+
+Yes. The PUMP-1 officially works with ESPHome and Home Assistant.
 
 ### Can I use the PUMP-1 to refill a pet bowl or coffee maker?
 

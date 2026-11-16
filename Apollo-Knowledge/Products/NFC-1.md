@@ -7,7 +7,7 @@ source: https://apolloautomation.com/products/nfc-1-nfc-reader-writer-and-emulat
 status: sold-out
 status_checked: 2026-11-15
 power_source: [usb-c]
-last_verified: 2026-11-15
+last_verified: 2026-11-16
 ---
 # NFC-1
 
@@ -31,12 +31,12 @@ The Apollo NFC-1 is an ESPHome-powered NFC reader and writer that connects to Ho
 
 ## Specs
 
-- Battery life: N/A — USB powered, no battery
-- Operating temperature: Unknown — escalate to support
-- Waterproof: Unknown — escalate to support
+- Battery life: N/A — USB-C powered, no battery
+- Operating temperature: -40 to 85 °C (rating of the ESP32-C6 module)
+- Waterproof: No — the NFC-1 is not waterproof
 - Power consumption awake: Unknown — escalate to support
 - Power consumption sleeping: Unknown — escalate to support
-- What battery works with it: N/A — USB powered, no battery
+- What battery works with it: N/A — USB-C powered, no battery
 
 ## Components
 

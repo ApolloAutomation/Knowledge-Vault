@@ -7,7 +7,7 @@ source: https://apolloautomation.com/products/temp-1
 status: available
 status_checked: 2026-11-15
 power_source: [usb-c, battery]
-last_verified: 2026-11-15
+last_verified: 2026-11-16
 ---
 # TEMP-1
 
@@ -17,7 +17,7 @@ The TEMP-1 is a temperature sensor for ESPHome and Home Assistant over Wi-Fi, wi
 
 ## Features
 
-- ESP32-based platform; local, private, open source
+- ESP32-C3 based; local, private, open source
 - Onboard AHT20-F temperature and humidity sensor
 - 3.5mm jack for optional probes:
   - 1.5 m flat waterproof DS18B20 probe ([[Long-Temperature-Probe]])
@@ -32,8 +32,8 @@ The TEMP-1 is a temperature sensor for ESPHome and Home Assistant over Wi-Fi, wi
 ## Specs
 
 - Battery life: Up to 6 months with optimized sleep settings (battery version)
-- Operating temperature: Unknown — escalate to support
-- Waterproof: The device itself: Unknown — escalate to support. The flat-cable DS18B20 probes are waterproof (submersible)
+- Operating temperature: -40 to 85 °C (rating of the ESP32-C3 module)
+- Waterproof: No. The TEMP-1 itself is not waterproof; only the flat-cable DS18B20 probes are submersible
 - Power consumption awake: Unknown — escalate to support
 - Power consumption sleeping: Unknown — escalate to support
 - What battery works with it: Rechargeable RC-CR123A (CR123A) or 16340 (not included; a 16340 battery is sold as an add-on)
@@ -43,7 +43,7 @@ The TEMP-1 is a temperature sensor for ESPHome and Home Assistant over Wi-Fi, wi
 - [[AHT20]] - onboard air temperature and humidity (AHT20-F variant)
 - [[DS18B20]] - optional waterproof flat-cable temperature probes ([[Long-Temperature-Probe]], [[Short-Temperature-Probe]])
 - NTC probe - optional stainless steel food-safe probe ([[TEMP-1-Food-Probe]])
-- Microcontroller: ESP32-based; exact chip Unknown — escalate to support
+- [[ESP32-C3]] - microcontroller
 
 ## Options and add-ons
 
@@ -82,11 +82,15 @@ Yes, with the 3.5mm 4-way multi-probe splitter. The long and short DS18B20 probe
 
 ### Can I put the TEMP-1 probe in water?
 
-The flat-cable DS18B20 probes ([[Long-Temperature-Probe]] and [[Short-Temperature-Probe]]) are waterproof and submersible, which suits uses like a fish tank or pool/hot tub. Water resistance of the [[TEMP-1-Food-Probe]] is not listed, so please contact support before submerging it.
+The flat-cable DS18B20 probes ([[Long-Temperature-Probe]] and [[Short-Temperature-Probe]]) are waterproof and submersible, which suits uses like a fish tank or pool/hot tub. Keep the TEMP-1 unit itself out of water, as it is not waterproof. Water resistance of the [[TEMP-1-Food-Probe]] is not listed, so please contact support before submerging it.
 
 ### Is the food probe dishwasher safe?
 
 No. The [[TEMP-1-Food-Probe]] is food-safe stainless steel but is not dishwasher safe.
+
+### Is the TEMP-1 waterproof?
+
+No. The TEMP-1 unit is not waterproof. To measure in water, use the submersible [[Long-Temperature-Probe]] or [[Short-Temperature-Probe]] and keep the TEMP-1 itself dry.
 
 ### Does the TEMP-1 have Bluetooth?
 

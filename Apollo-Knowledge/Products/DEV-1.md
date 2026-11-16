@@ -7,7 +7,7 @@ source: https://apolloautomation.com/products/apollo-dev-1
 status: available
 status_checked: 2026-11-15
 power_source: [usb-c]
-last_verified: 2026-11-15
+last_verified: 2026-11-16
 ---
 # DEV-1
 
@@ -34,8 +34,8 @@ The Apollo DEV-1 is a development board for prototyping and custom projects. It 
 - Onboard RGB LED: GPIO3
 - Firmware: Not pre-flashed; you flash ESPHome or WLED yourself
 - Battery life: N/A — USB-C powered, no battery
-- Operating temperature: Unknown — escalate to support
-- Waterproof: Unknown — escalate to support
+- Operating temperature: -40 to 85 °C (rating of the ESP32-C3-MINI-1 module)
+- Waterproof: No. The DEV-1 is not waterproof
 - Power consumption awake: About 100-200 mA drawn by the microcontroller from the 3.3V rail; total board draw Unknown — escalate to support
 - Power consumption sleeping: Unknown — escalate to support
 - What battery works with it: N/A — USB-C powered, no battery
@@ -80,6 +80,10 @@ I2C uses SDA on GPIO1 and SCL on GPIO0. UART uses TX on GPIO21 and RX on GPIO20.
 ### Does the DEV-1 support Thread or Zigbee?
 
 No. The DEV-1's ESP32-C3 provides WiFi and Bluetooth. If you need Thread or Zigbee, the [[DEV-2]] uses an ESP32-C6 that supports WiFi, Bluetooth, Thread and Zigbee.
+
+### What temperatures can the DEV-1 run in?
+
+The DEV-1 is rated for -40 to 85 °C, which is the operating temperature rating of its ESP32-C3-MINI-1 module. It is not waterproof, so keep it dry.
 
 ### Does the DEV-1 run on a battery?
 

@@ -7,13 +7,13 @@ source: https://apolloautomation.com/products/apollo-voice-speaker-add-on
 status: sold-out
 status_checked: 2026-11-15
 power_source: [usb-c]
-last_verified: 2026-11-15
+last_verified: 2026-11-16
 ---
 # Apollo-Voice-Speaker-Add-on
 
 ## Description
 
-The Apollo Voice Speaker Add-on is a speaker dock for the Home Assistant Voice Preview Edition (Voice PE). It adds a speaker and built-in amplifier for music, announcements and voice responses. The Voice PE sits on top and connects through built-in audio and power cables, with one power cord for both. The speaker grid/mesh design is still being tested, and Apollo welcomes feedback on it in the Apollo Discord.
+The Apollo Voice Speaker Add-on is a speaker dock for the Home Assistant Voice Preview Edition (Voice PE). It adds a speaker and built-in amplifier for music, announcements and voice responses. The Voice PE sits on top and connects through built-in audio and power cables, with one power cord for both. It ships without a speaker grille. Grilles will be sold separately, and you can also 3D print and add your own.
 
 ## Features
 
@@ -25,11 +25,13 @@ The Apollo Voice Speaker Add-on is a speaker dock for the Home Assistant Voice P
 
 ## Specs
 
+- Power input: one 5V power cord powers both the speaker add-on and the Voice PE
+- Speaker grille: Not included. Grilles will be sold separately, or you can 3D print your own
 - Battery life: N/A — USB-C powered, no battery
 - Operating temperature: Unknown — escalate to support
-- Waterproof: Unknown — escalate to support
+- Waterproof: No. The speaker add-on is not waterproof; keep it indoors and dry
 - Power consumption awake: Unknown — escalate to support
-- Power consumption sleeping: N/A — USB-C powered, no sleep mode
+- Power consumption sleeping: N/A — no sleep mode
 - What battery works with it: N/A — USB-C powered, no battery
 
 ## Components
@@ -66,6 +68,6 @@ Yes. It has a speaker wire header so you can connect your own speaker.
 
 Yes. It works with Music Assistant and Sendspin for synced multi-room playback.
 
-### Is the speaker grille design final?
+### Does the Voice Speaker Add-on come with a speaker grille?
 
-The speaker grid/mesh design is still being tested. Apollo welcomes feedback on it in the Apollo Discord.
+No. It ships without a speaker grille. Grilles will be sold separately, and you can also 3D print and add your own.

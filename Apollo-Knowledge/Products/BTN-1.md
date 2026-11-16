@@ -7,7 +7,7 @@ source: https://apolloautomation.com/products/btn-1-macro-deck
 status: available
 status_checked: 2026-11-15
 power_source: [usb-c, battery]
-last_verified: 2026-11-15
+last_verified: 2026-11-16
 ---
 # BTN-1
 
@@ -31,8 +31,8 @@ The BTN-1 Macro Deck has four hot-swappable mechanical brown switches, white key
 ## Specs
 
 - Battery life: Up to a year with about 4 presses a day in deep sleep mode, or about 38 hours in always-awake mode (battery variants)
-- Operating temperature: Unknown — escalate to support
-- Waterproof: Unknown — escalate to support
+- Operating temperature: -40 to 85 °C (rating of the ESP32-C6-MINI-1 module)
+- Waterproof: No — the BTN-1 is not waterproof
 - Power consumption awake: Unknown — escalate to support
 - Power consumption sleeping: Unknown — escalate to support
 - What battery works with it: 3.7V 2800 mAh battery with a PH 2.0 connector; size cannot exceed 80mm x 30mm x 8mm

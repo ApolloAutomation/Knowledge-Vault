@@ -7,13 +7,13 @@ source: https://apolloautomation.com/products/plt-1
 status: available
 status_checked: 2026-11-15
 power_source: [usb-c, battery]
-last_verified: 2026-11-15
+last_verified: 2026-11-16
 ---
 # PLT-1
 
 ## Description
 
-The PLT-1 is an indoor plant multisensor that measures soil moisture, air temperature, humidity, LUX and UV, with an onboard piezo buzzer and addressable RGB LED. It uses a capacitive soil moisture sensor, and the ground-contact portion is protected by a conformal coating for longevity. Soil temperature can be measured with an optional probe ([[Short-Temperature-Probe]] or [[Long-Temperature-Probe]]). It comes in a battery (B) version and a non-battery version; the non-battery version is significantly smaller. The battery version does not include a battery or charger.
+The PLT-1 is an indoor plant multisensor that measures soil moisture, air temperature, humidity, LUX and UV, with an onboard piezo buzzer and addressable RGB LED. It uses a capacitive soil moisture sensor, and the ground-contact portion is protected by a conformal coating for longevity. Soil temperature can be measured with an optional probe ([[Short-Temperature-Probe]] or [[Long-Temperature-Probe]]). It comes in a battery (B) version and a non-battery version; the non-battery version is significantly smaller. Both versions can be powered over USB-C. On the battery version, USB-C does not charge the battery. The battery version does not include a battery or charger. The PLT-1 is not waterproof; only the soil probes are submersible.
 
 ## Features
 
@@ -29,8 +29,8 @@ The PLT-1 is an indoor plant multisensor that measures soil moisture, air temper
 ## Specs
 
 - Battery life: Estimated 6 months with a quality rechargeable 18650 and default sleep/wake settings (battery version)
-- Operating temperature: Unknown — escalate to support
-- Waterproof: Sensor body: Unknown — escalate to support. The ground-contact portion has a conformal coating, and the optional DS18B20 soil temperature probes are waterproof
+- Operating temperature: -40 to 85 °C (rating of the ESP32-C3 module)
+- Waterproof: No. The ground-contact portion has a conformal coating for longevity, and the optional DS18B20 soil temperature probes are submersible, but the PLT-1 itself is not waterproof
 - Power consumption awake: Unknown — escalate to support
 - Power consumption sleeping: Unknown — escalate to support
 - What battery works with it: Rechargeable flat top 18650 (battery version only; you supply the battery and charger)
@@ -41,7 +41,7 @@ The PLT-1 is an indoor plant multisensor that measures soil moisture, air temper
 - [[LTR390]] - UV and LUX light sensor
 - [[DS18B20]] - optional waterproof soil temperature probe ([[Short-Temperature-Probe]] or [[Long-Temperature-Probe]])
 - Capacitive soil moisture sensor - soil moisture sensing (no part number listed)
-- Microcontroller: Unknown — escalate to support
+- [[ESP32-C3]] - microcontroller
 
 ## Options and add-ons
 
@@ -66,6 +66,10 @@ A rechargeable flat top 18650 battery, in the battery version only. The non-batt
 
 An estimated 6 months with a quality rechargeable 18650 and the default sleep/wake settings.
 
+### Does plugging in USB-C charge the PLT-1 battery?
+
+No. Both versions can be powered over USB-C, but on the battery version USB-C does not charge the battery. Charge the 18650 in a separate charger.
+
 ### What is the difference between the battery and non-battery PLT-1?
 
 The battery version runs on a rechargeable 18650 (not included). The non-battery version has no battery and is significantly smaller.
@@ -76,7 +80,7 @@ Yes, with an optional DS18B20 waterproof probe: the 20 cm [[Short-Temperature-Pr
 
 ### Is the PLT-1 waterproof?
 
-No waterproof rating is given for the sensor body, so please contact support before exposing it to water. The part that goes into the soil has a conformal coating for longevity, and the optional soil temperature probes are waterproof.
+No. The PLT-1 is not waterproof. The part that goes into the soil has a conformal coating for longevity, and the optional soil temperature probes are submersible, but keep the sensor body itself out of water.
 
 ### Can the PLT-1 water my plants automatically?
 

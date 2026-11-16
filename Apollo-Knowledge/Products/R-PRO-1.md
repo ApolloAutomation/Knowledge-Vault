@@ -7,7 +7,7 @@ source: https://apolloautomation.com/products/r-pro-1
 status: available
 status_checked: 2026-11-15
 power_source: [poe, usb-c]
-last_verified: 2026-11-15
+last_verified: 2026-11-16
 ---
 # R-PRO-1
 
@@ -32,9 +32,9 @@ The R PRO-1 is Apollo's most advanced presence sensor: a compact PoE dual mmWave
 
 - Power input: PoE (802.3af) or USB-C
 - Battery life: N/A — PoE or USB-C powered, no battery
-- Operating temperature: Unknown — escalate to support
-- Waterproof: Unknown — escalate to support
-- Power consumption awake: Unknown — escalate to support
+- Operating temperature: -40 to 65 °C (rating of the ESP32-S3 module, most conservative ESP32-S3 range)
+- Waterproof: No — the R PRO-1 is not waterproof
+- Power consumption awake: Normal for a basic 802.3af PoE device; it does not need a high-power PoE port
 - Power consumption sleeping: Unknown — escalate to support
 - What battery works with it: N/A — PoE or USB-C powered, no battery
 
@@ -44,7 +44,7 @@ The R PRO-1 is Apollo's most advanced presence sensor: a compact PoE dual mmWave
 - [[LD2412]] - optional mmWave radar for still presence detection
 - [[LTR390]] - ambient lux and UV sensor
 - [[SCD40]] - optional NDIR CO2 sensor on the mezzanine expansion board
-- Microcontroller: Unknown — escalate to support (the device has built-in Wi-Fi and Bluetooth)
+- [[ESP32-S3]] - microcontroller; built-in Wi-Fi and Bluetooth
 
 ## Options and add-ons
 
@@ -69,7 +69,7 @@ The device must be able to reach github.com, because the firmware is downloaded 
 
 ### What kind of PoE does the R PRO-1 need?
 
-The R PRO-1 supports true PoE (802.3af compliant). It can also be powered over USB-C instead.
+The R PRO-1 supports true PoE (802.3af compliant). Its power draw is normal for a basic 802.3af PoE device, so it does not need a high-power PoE port. It can also be powered over USB-C instead.
 
 ### Will the R PRO-1 detect someone sitting still or resting?
 

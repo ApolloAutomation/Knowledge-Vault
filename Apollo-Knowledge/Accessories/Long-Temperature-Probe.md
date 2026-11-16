@@ -6,19 +6,19 @@ audience: customer
 source: https://apolloautomation.com/products/long-temperature-probe
 status: available
 status_checked: 2026-11-15
-last_verified: 2026-11-15
+last_verified: 2026-11-16
 ---
 # Long-Temperature-Probe
 
 ## Description
 
-A 1.5 m / 59 inch waterproof DS18B20 temperature probe for the [[TEMP-1]]. It also works with the [[PLT-1]].
+A 1.5 m / 59 inch waterproof DS18B20 temperature probe for the [[TEMP-1]]. It also works with the [[PLT-1]], the [[ESK-1]] and the [[Apollo-Breakout-Module]]. The probe is submersible, but the TEMP-1 and PLT-1 units themselves are not waterproof.
 
 ## Features
 
 - 1.5 m / 59 inches long
 - Waterproof flat cable, submersible
-- Works with the TEMP-1 and the PLT-1
+- Works with the TEMP-1, PLT-1, ESK-1 and Apollo-Breakout-Module
 - Works with the TEMP-1-Multi-Probe-Splitter (listed as a Dallas long probe)
 
 ## Specs
@@ -31,6 +31,8 @@ A 1.5 m / 59 inch waterproof DS18B20 temperature probe for the [[TEMP-1]]. It al
 
 - [[TEMP-1]]
 - [[PLT-1]]
+- [[ESK-1]]
+- [[Apollo-Breakout-Module]]
 - TEMP-1-Multi-Probe-Splitter
 
 ## What's in the box
@@ -41,7 +43,7 @@ Single item, no variants. Box contents: Unknown — escalate to support.
 
 ### Can the long temperature probe go in water?
 
-Yes. It is a waterproof flat-cable DS18B20 probe and is submersible.
+Yes. It is a waterproof flat-cable DS18B20 probe and is submersible. Keep the device it plugs into out of water, as the TEMP-1 and PLT-1 are not waterproof.
 
 ### What is the maximum temperature the long probe can measure?
 
@@ -54,6 +56,10 @@ Yes. It works with both the [[TEMP-1]] and the [[PLT-1]].
 ### Can I use the long probe with the multi-probe splitter?
 
 Yes. It works with the TEMP-1-Multi-Probe-Splitter, where it is listed as the Dallas long probe.
+
+### Does the long probe work with the ESK-1 or Breakout Module?
+
+Yes. It is compatible with the [[ESK-1]] and the [[Apollo-Breakout-Module]].
 
 ### What is the difference between the long and short probe?
 

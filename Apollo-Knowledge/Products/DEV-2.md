@@ -7,7 +7,7 @@ source: https://apolloautomation.com/products/apollo-dev-2
 status: available
 status_checked: 2026-11-15
 power_source: [usb-c]
-last_verified: 2026-11-15
+last_verified: 2026-11-16
 ---
 # DEV-2
 
@@ -34,8 +34,8 @@ The Apollo DEV-2 is a development board for prototyping and custom projects. It 
 - Onboard RGB LED: GPIO3
 - Firmware: Not pre-flashed; you flash ESPHome or WLED yourself
 - Battery life: N/A — USB-C powered, no battery
-- Operating temperature: Unknown — escalate to support
-- Waterproof: Unknown — escalate to support
+- Operating temperature: -40 to 85 °C (rating of the ESP32-C6-MINI-1 module)
+- Waterproof: No. The DEV-2 is not waterproof
 - Power consumption awake: About 100-200 mA drawn by the microcontroller from the 3.3V rail; total board draw Unknown — escalate to support
 - Power consumption sleeping: Unknown — escalate to support
 - What battery works with it: N/A — USB-C powered, no battery
@@ -80,6 +80,10 @@ The 3.3V pin supplies up to 600 mA, but the microcontroller itself uses 100-200 
 ### Which pins are I2C, UART and the RGB LED on the DEV-2?
 
 I2C uses SDA on GPIO1 and SCL on GPIO0. UART uses TX on GPIO16 and RX on GPIO17. The onboard RGB LED is on GPIO3. ADC-capable pins are GPIO0, GPIO1, GPIO2, GPIO4, GPIO5 and GPIO6.
+
+### What temperatures can the DEV-2 run in?
+
+The DEV-2 is rated for -40 to 85 °C, which is the operating temperature rating of its ESP32-C6-MINI-1 module. It is not waterproof, so keep it dry.
 
 ### Does the DEV-2 run on a battery?
 
