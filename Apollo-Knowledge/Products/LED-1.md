@@ -1,10 +1,22 @@
 ---
-source: https://apolloautomation.com/products/led-1-led-controller
+title: LED-1
+aliases: [LED-1 LED Controller, LED1, LED 1]
 type: product
+audience: customer
+source: https://apolloautomation.com/products/led-1-led-controller
+status: sold-out
+status_checked: 2026-11-15
+power_source: [usb-c, wago]
+last_verified: 2026-11-15
 ---
-Description: The Apollo LED-1 is an LED controller for advanced lighting projects, pre-flashed with WLED for Wi-Fi control of LED strips and devices. It can be powered over USB-C or through two separate WAGO connectors, so it can power two LED devices or strips independently. It has a built-in replaceable fuse and a digital microphone for audio reactive effects. The page lists it as sold out.
+# LED-1
 
-Features:
+## Description
+
+The Apollo LED-1 is an LED controller for advanced lighting projects, pre-flashed with WLED for Wi-Fi control of LED strips and devices. It can be powered over USB-C or through two separate WAGO connectors, so it can power two LED devices or strips independently. It has a built-in replaceable fuse and a digital microphone for audio reactive effects.
+
+## Features
+
 - Pre-flashed with WLED; supports OTA updates through WLED
 - Can be powered over USB-C or through two WAGO connectors
 - Two separate outputs for independent LED devices or zones
@@ -12,20 +24,51 @@ Features:
 - Integrated digital microphone for audio reactive lighting
 - Supports RGB, RGBW and addressable LEDs
 
-Specs:
-Battery life: Not stated on site
-Operating temperature: Not stated on site
-Waterproof: Not stated on site
-Power consumption awake: Not stated on site
-Power consumption sleeping: Not stated on site
-What battery works with it: Not stated on site
+## Specs
 
-Sensor Specs:
-ESP32-PICO - the microcontroller; provides Wi-Fi and runs WLED
-Digital microphone - for audio reactive lighting effects (part number Not stated on site)
+- Battery life: N/A — powered over USB-C or WAGO, no battery
+- Operating temperature: Unknown — escalate to support
+- Waterproof: Unknown — escalate to support
+- Power consumption awake: Unknown — escalate to support
+- Power consumption sleeping: Unknown — escalate to support
+- What battery works with it: N/A — powered over USB-C or WAGO, no battery
 
-Options and add-ons: None listed (single variant).
+## Components
 
-What's in the box: The page lists a sensor and an Apollo sticker (wording unclear on site)
+- ESP32-PICO - the microcontroller; provides Wi-Fi and runs WLED
+- Digital microphone - for audio reactive lighting effects (part number: Unknown — escalate to support)
 
-Common questions and answers:
+## Options and add-ons
+
+None listed (single variant).
+
+## What's in the box
+
+- LED-1
+- Apollo sticker
+
+## Common questions and answers
+
+### Can the LED-1 control two LED strips separately?
+
+Yes. It has two separate outputs for independent LED devices or zones. Using its two separate WAGO connectors, it can power two LED devices or strips independently.
+
+### How do I power the LED-1?
+
+Over USB-C, or through its two WAGO connectors.
+
+### What kind of LEDs does the LED-1 support?
+
+RGB, RGBW and addressable LEDs.
+
+### What firmware does the LED-1 come with, and how do I update it?
+
+It comes pre-flashed with WLED for Wi-Fi control, and supports over-the-air (OTA) updates through WLED.
+
+### Does the LED-1 have overload protection?
+
+Yes. It has a built-in fuse for overload protection, and the fuse is replaceable.
+
+### Can the LED-1 react to music?
+
+Yes. It has an integrated digital microphone for audio reactive lighting effects.
