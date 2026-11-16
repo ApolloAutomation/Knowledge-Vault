@@ -2,7 +2,7 @@
 type: component
 ---
 Description: The SCD40 (SCD-40) is a true NDIR (non-dispersive infrared) CO2 sensor for indoor air quality monitoring, described on the site as pre-calibrated and ready to use, with low power consumption and real-time CO2 measurements. It connects over I2C and is sold as an add-on and on breakout boards (CO2 readings with integrated temperature and humidity compensation). It is optional on several Apollo products, e.g. on the optional mezzanine expansion board on the R PRO-1. The site says it is not for CO2 safety monitoring (NBIC, NFPA, IFC).
-Used in: [[MSR-2]], [[MTR-1]], [[R-PRO-1]], [[AIR-1]], [[DEV-1]], [[DEV-2]], [[SCD40-Breakout-Board]], [[SEN55-SCD40-Breakout-Board]]
+Used in: [[MSR-2]], [[MTR-1]], [[R-PRO-1]], [[AIR-1]], [[DEV-1]], [[DEV-2]], SCD40-Breakout-Board, SEN55-SCD40-Breakout-Board
 
 Source: Sensirion SCD4x datasheet (Version 1.7, April 2025)
 CO2 range: specified 400–2000 ppm

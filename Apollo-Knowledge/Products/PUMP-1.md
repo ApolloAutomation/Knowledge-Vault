@@ -7,7 +7,7 @@ Description: The Apollo PUMP-1 is a compact, food-safe fluid pump built to work 
 Features:
 - Food-safe materials for liquids
 - Mini DC fluid pump, powered over USB-C
-- Two capacitive fluid level sensor ports ([[PUMP-1-Fluid-Sensor]]); pump stops automatically when the bottle runs empty
+- Two capacitive fluid level sensor ports (PUMP-1-Fluid-Sensor); pump stops automatically when the bottle runs empty
 - Pairs with the PLT-1 for automated plant watering
 - Works with ESPHome and Home Assistant (reported in customer reviews, not in the product text)
 - Use cases on site: automated plant watering, fish tank filling and maintenance, robot vacuum mop tank refills, pet water bowl refills, coffee maker water supply, drain pump function
@@ -27,9 +27,9 @@ What battery works with it: Not stated on site
 
 Sensor Specs:
 [[ESP32-C6]] - the ESP32-C6-MINI microcontroller module, gives the PUMP-1 Wi-Fi connectivity
-(Fluid level sensors are optional add-ons, see [[PUMP-1-Fluid-Sensor]])
+(Fluid level sensors are optional add-ons, see PUMP-1-Fluid-Sensor)
 
-Options and add-ons: PUMP-1 only, or with add-ons: USB-C Cable, [[PUMP-1-Fluid-Sensor]], [[PUMP-1-Tubing]], [[PUMP-1-Bottle]] (bottle and stand), Front Facing USB-C Charger, or the [[PUMP-1-Full-Accessory-Kit]].
+Options and add-ons: PUMP-1 only, or with add-ons: USB-C Cable, PUMP-1-Fluid-Sensor, [[PUMP-1-Tubing]], PUMP-1-Bottle (bottle and stand), Front Facing USB-C Charger, or the PUMP-1-Full-Accessory-Kit.
 
 What's in the box: PUMP-1, Apollo sticker
 

@@ -4,83 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "39e50d39347fde97",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "c30c33c2e3e1ede6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Products/MSR-2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "MSR-2"
-            }
-          },
-          {
-            "id": "ce0ea93da947d292",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Products/MSR-2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "MSR-2"
-            }
-          },
-          {
-            "id": "827fc058fc7652f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Components-Sensors/ESP32-C6.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ESP32-C6"
-            }
-          },
-          {
-            "id": "e5da0df762514a13",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Components-Sensors/ld2450.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ld2450"
-            }
-          },
-          {
-            "id": "3cea8a8892fc9e60",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Products/MSR-2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "MSR-2"
-            }
-          }
-        ],
-        "currentTab": 4
-      },
-      {
         "id": "0dc1b9c3469bce9f",
         "type": "tabs",
         "children": [
@@ -88,10 +11,14 @@
             "id": "3815b7511ab061d1",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Products/AIR-1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AIR-1"
             }
           }
         ]
@@ -172,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ESP32-C6.md",
+                "file": "Products/AIR-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -261,12 +188,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "3cea8a8892fc9e60",
+  "active": "3815b7511ab061d1",
   "lastOpenFiles": [
+    "Components-Sensors/SEN55.md",
+    "Products/AIR-1.md",
+    "Accessories/HUB75-Matrix-Panel.md",
+    "Products/ESK-1.md",
+    "Products/DEV-1.md",
+    "Accessories/R-PRO-1-Gang-Box-Mount.md",
+    "Accessories/BTN-1-Stand.md",
+    "Accessories/Dupont-Cables.md",
+    "Accessories/AA-Batteries.md",
+    "Accessories/16340-Rechargeable-Battery.md",
+    "Components-Sensors/Piezo-buzzer.md",
+    "Components-Sensors/PCM5122.md",
+    "Components-Sensors/ESP32-PICO.md",
+    "Products/MSR-2.md",
     "Components-Sensors/AHT20.md",
     "Components-Sensors/ld2450.md",
     "Components-Sensors/LTR390.md",
-    "Products/MSR-2.md",
     "Components-Sensors/ESP32-C6.md",
     "ESP32-.md",
     "Components-Sensors",

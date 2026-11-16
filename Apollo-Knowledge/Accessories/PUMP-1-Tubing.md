@@ -14,4 +14,4 @@ Outer diameter: 10 mm
 
 Compatible with: [[PUMP-1]]
 
-Included/variants: Single item. Also sold inside the [[PUMP-1-Full-Accessory-Kit]].
+Included/variants: Single item. Also sold inside the PUMP-1-Full-Accessory-Kit.

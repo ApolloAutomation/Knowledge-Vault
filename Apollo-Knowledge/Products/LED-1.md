@@ -21,7 +21,7 @@ Power consumption sleeping: Not stated on site
 What battery works with it: Not stated on site
 
 Sensor Specs:
-[[ESP32-PICO]] - the microcontroller; provides Wi-Fi and runs WLED
+ESP32-PICO - the microcontroller; provides Wi-Fi and runs WLED
 Digital microphone - for audio reactive lighting effects (part number Not stated on site)
 
 Options and add-ons: None listed (single variant).

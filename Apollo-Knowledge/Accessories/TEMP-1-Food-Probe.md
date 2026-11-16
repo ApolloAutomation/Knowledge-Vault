@@ -8,7 +8,7 @@ Features:
 - Stainless steel, food-safe probe with NTC sensor
 - 1 m (~3 ft) long
 - Not dishwasher safe
-- Not compatible with the [[TEMP-1-Multi-Probe-Splitter]] (the splitter page says so)
+- Not compatible with the TEMP-1-Multi-Probe-Splitter (the splitter page says so)
 
 Probe type: NTC sensor, stainless steel, food-safe
 Probe length: 1 m (~3 ft)

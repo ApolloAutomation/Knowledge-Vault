@@ -7,7 +7,7 @@ Description: A 1.5 m / 59 inch temperature probe for the [[TEMP-1]]. It also wor
 Features:
 - 1.5 m / 59 inches long
 - Works with the TEMP-1 and the PLT-1
-- Works with the [[TEMP-1-Multi-Probe-Splitter]] (listed as a Dallas long probe)
+- Works with the TEMP-1-Multi-Probe-Splitter (listed as a Dallas long probe)
 
 Probe type: DS18B20 waterproof flat cable (submersible)
 Probe length: 1.5 m / 59 in

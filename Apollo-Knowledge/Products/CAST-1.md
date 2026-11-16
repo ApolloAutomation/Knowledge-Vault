@@ -25,7 +25,7 @@ What battery works with it: Not stated on site
 Sensor Specs:
 [[ESP32-S3]] - microcontroller; Wi-Fi 2.4 GHz and BLE, Bluetooth proxy
 [[PCM5122]] - Texas Instruments 32-bit stereo DAC for the analog audio output
-[[W5500]] - Ethernet chip on the optional Ethernet HAT (optional)
+W5500 - Ethernet chip on the optional Ethernet HAT (optional)
 
 Options and add-ons: USB-C cable; USB-C charger; 3.5mm audio/aux cable; Ethernet cable; W5500 Ethernet Hat (data only, no PoE). Related: [[CAST-PRO-1]] adds audio in, optical out and built-in Ethernet.
 

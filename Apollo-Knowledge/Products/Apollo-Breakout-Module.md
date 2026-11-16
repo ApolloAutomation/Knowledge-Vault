@@ -26,7 +26,7 @@ Sensor Specs:
 [[ESP32-C6]] - the microcontroller whose pins the module breaks out (it sits on the ESPHome C6 Board, not on this module)
 [[SEN65]] - can plug into the dedicated SEN6x port (the site says Sensirion SEN6x sensors; SEN65 is a SEN6x series part)
 
-Options and add-ons: [[Apollo-FPC-Ribbon-Cable]] (to connect to the C6 board). Optional probes named on the site: SHT20 temperature and humidity probe (3.5mm jack), DS18B20 temperature probe (1-Wire port)
+Options and add-ons: Apollo-FPC-Ribbon-Cable (to connect to the C6 board). Optional probes named on the site: SHT20 temperature and humidity probe (3.5mm jack), DS18B20 temperature probe (1-Wire port)
 
 What's in the box: Apollo Breakout Module
 

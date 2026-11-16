@@ -12,6 +12,6 @@ Features:
 - P2.5 / 2.5mm LED pitch
 - Controller not included
 
-Compatible with: [[M-1]] (use with [[M-1-Controller]]); extra panels for multi-panel setups also need [[M-1-Data-Cable]] and [[M-1-Power-Module]]
+Compatible with: [[M-1]] (use with M-1-Controller); extra panels for multi-panel setups also need M-1-Data-Cable and M-1-Power-Module
 
 Included/variants: Single panel only. Panel-plus-stand kits are folded into [[M-1]].

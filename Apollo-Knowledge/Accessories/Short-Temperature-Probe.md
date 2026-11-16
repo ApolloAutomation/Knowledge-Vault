@@ -8,7 +8,7 @@ Features:
 - 20 cm / 7.8 inches long
 - Intended for monitoring soil temperature with the PLT-1
 - Also works with the TEMP-1
-- Works with the [[TEMP-1-Multi-Probe-Splitter]] (listed as a Dallas short probe)
+- Works with the TEMP-1-Multi-Probe-Splitter (listed as a Dallas short probe)
 
 Probe type: DS18B20 waterproof flat cable (submersible)
 Probe length: 20 cm / 7.8 in
