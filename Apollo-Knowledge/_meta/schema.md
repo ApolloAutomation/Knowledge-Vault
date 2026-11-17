@@ -93,3 +93,41 @@ Products have six standard spec fields:
 - What battery works with it
 
 If `power_source` does not include `battery`, then "Battery life" and "What battery works with it" must be `N/A — <reason>`. "Power consumption sleeping" must also be `N/A` unless the device has a sleep mode.
+
+## Setup and Troubleshooting notes
+
+Notes in `Setup/` (`type: guide`) and `Troubleshooting/` (`type: troubleshooting`) are how-to answers that the support AI can send to customers.
+
+### Frontmatter
+
+| Key | Values |
+|---|---|
+| `title` | Same as the filename, e.g. `Improv-Wi-Fi-Setup` |
+| `aliases` | Other names customers use, e.g. `[wifi setup, connect to wifi]` |
+| `type` | `guide` or `troubleshooting` |
+| `audience` | `customer` |
+| `applies_to` | Quoted wikilinks to the products this note covers, e.g. `["[[MSR-2]]", "[[MTR-1]]"]` |
+| `sources` | List of the official URLs every step came from |
+| `review_status` | `draft` until a person has checked it, then `reviewed` |
+| `last_verified` | YYYY-MM-DD |
+
+### Sections
+
+```
+Guide                      Troubleshooting
+# <title>                  # <title>
+## Summary                 ## Summary
+## Applies to              ## Applies to
+## Before you start        ## Symptoms
+## Steps                   ## Quick checks
+## If it doesn't work      ## Fix
+## Customer phrasings      ## When to escalate
+                           ## Customer phrasings
+```
+
+### Rules
+
+- **Steps:** number them. Every step must come from a URL listed in `sources`.
+- **Device differences:** when a step differs by device (for example, where the boot button is), write it as a sub-list per product.
+- **Customer phrasings:** 3–6 ways a customer would actually describe the problem.
+- **Links:** only use links from the *Customer links* section of [[Links]].

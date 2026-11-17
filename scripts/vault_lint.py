@@ -7,17 +7,27 @@ from pathlib import Path
 import yaml
 
 VAULT = Path(__file__).resolve().parent.parent / "Apollo-Knowledge"
-NOTE_DIRS = {"Products": "product", "Accessories": "accessory", "Components-Sensors": "component"}
+NOTE_DIRS = {
+    "Products": "product", "Accessories": "accessory", "Components-Sensors": "component",
+    "Setup": "guide", "Troubleshooting": "troubleshooting",
+}
+GUIDE_KEYS = ["title", "aliases", "type", "audience", "applies_to", "sources", "review_status", "last_verified"]
+REVIEW_STATUSES = {"draft", "reviewed"}
+URL = re.compile(r"https?://[^\s)>\]]+")
 
 REQUIRED = {
     "product": ["title", "aliases", "type", "audience", "source", "status", "status_checked", "power_source", "last_verified"],
     "accessory": ["title", "aliases", "type", "audience", "source", "status", "status_checked", "last_verified"],
     "component": ["title", "aliases", "type", "audience", "used_in", "last_verified"],
+    "guide": GUIDE_KEYS,
+    "troubleshooting": GUIDE_KEYS,
 }
 SECTIONS = {
     "product": ["Description", "Features", "Specs", "Components", "Options and add-ons", "What's in the box", "Common questions and answers"],
     "accessory": ["Description", "Features", "Specs", "Compatible with", "What's in the box", "Common questions and answers"],
     "component": ["Description", "Used in", "Specs"],
+    "guide": ["Summary", "Applies to", "Before you start", "Steps", "If it doesn't work", "Customer phrasings"],
+    "troubleshooting": ["Summary", "Applies to", "Symptoms", "Quick checks", "Fix", "When to escalate", "Customer phrasings"],
 }
 DATASHEET = "Datasheet figures (chip manufacturer, not an Apollo rating)"
 STATUSES = {"available", "preorder", "sold-out", "discontinued"}
@@ -46,7 +56,19 @@ def as_date(v):
     return str(v) if v is not None else ""
 
 
-def lint_note(path, kind, names, errors):
+def allowed_hosts():
+    links = VAULT / "Links.md"
+    if not links.exists():
+        return None
+    return {re.sub(r"^www\.", "", u.split("/")[2].lower()) for u in URL.findall(links.read_text(encoding="utf-8"))}
+
+
+def url_allowed(url, hosts):
+    host = re.sub(r"^www\.", "", url.split("/")[2].lower())
+    return host in hosts
+
+
+def lint_note(path, kind, names, errors, hosts=None):
     rel = path.relative_to(VAULT)
     err = lambda m: errors.append(f"{rel}: {m}")
     fm, body = parse(path)
@@ -74,6 +96,16 @@ def lint_note(path, kind, names, errors):
         ps = fm.get("power_source") or []
         if not isinstance(ps, list) or not ps or set(ps) - POWER:
             err(f"power_source must be a non-empty list from {sorted(POWER)}")
+    if kind in ("guide", "troubleshooting"):
+        if fm.get("review_status") not in REVIEW_STATUSES:
+            err(f"review_status must be one of {sorted(REVIEW_STATUSES)}")
+        for key in ("applies_to", "sources"):
+            if not isinstance(fm.get(key), list) or not fm.get(key):
+                err(f"{key} must be a non-empty list")
+    if hosts is not None:
+        for u in URL.findall(body) + [x for x in (fm.get("sources") or []) if isinstance(x, str)]:
+            if not url_allowed(u, hosts):
+                err(f"URL host not in Links.md allowlist: {u}")
     if kind == "component":
         if fm.get("sold_as_product") and "source" not in fm:
             err("sold_as_product requires source")
@@ -103,7 +135,7 @@ def lint_note(path, kind, names, errors):
         if re.match(r"^[^:]+:\s*Unknown", ctx):
             err(f"body line {line}: use 'Unknown — escalate to support'")
 
-    for target in WIKILINK.findall(body + "\n" + str(fm.get("used_in", ""))):
+    for target in WIKILINK.findall(body + "\n" + str(fm.get("used_in", "")) + str(fm.get("applies_to", ""))):
         if target.strip() not in names:
             err(f"broken or wrong-case wikilink [[{target}]]")
 
@@ -140,8 +172,9 @@ def main():
     errors = []
     notes = [(p, kind) for d, kind in NOTE_DIRS.items() for p in sorted((VAULT / d).glob("*.md"))]
     names = {p.stem for p in VAULT.rglob("*.md") if ".obsidian" not in p.parts}
+    hosts = allowed_hosts()
     for path, kind in notes:
-        lint_note(path, kind, names, errors)
+        lint_note(path, kind, names, errors, hosts)
     for e in errors:
         print(e)
     print(f"\n{len(notes)} notes checked, {len(errors)} problem(s).")
