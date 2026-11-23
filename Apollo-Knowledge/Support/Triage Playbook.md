@@ -78,6 +78,10 @@ Do: Look at the included order number and note the reason for the request and, i
 When: a customer message arrives requesting an invoice for a purchase
 Do: Ask the customer for the company and tax information that they require for the invoice
 
+## shipsurance
+When: a message is from "shopifyclaims@shipsurance.com" and is related to a filed insurance claim.
+Do: Tag and sort these messages.
+
 ## Tags
 Tags are separate from the category and can go with any category; use [] when none fits.
 - mmwave: the ticket is about an mmWave radar presence sensor, or a product's radar presence readings.
