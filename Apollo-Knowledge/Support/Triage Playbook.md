@@ -70,6 +70,18 @@ Do: Mark the contact as spam and delete the ticket.
 When: an automated DHL, UPS, USPS (or other carrier) shipping update email, not written by a person.
 Do: Delete it; nobody replies.
 
+## return_cancellation
+When: a message is from "do_not_reply@inventori.io" and includes information about a customer applying for a return or order cancellation.
+Do: Look at the included order number and note the reason for the request and, if shipped, the date of shipping.
+
+## invoice_requests
+When: a customer message arrives requesting an invoice for a purchase
+Do: Ask the customer for the company and tax information that they require for the invoice
+
+## shipsurance
+When: a message is from "shopifyclaims@shipsurance.com" and is related to a filed insurance claim.
+Do: Tag and sort these messages.
+
 ## Tags
 Tags are separate from the category and can go with any category; use [] when none fits.
 - mmwave: the ticket is about an mmWave radar presence sensor, or a product's radar presence readings.
